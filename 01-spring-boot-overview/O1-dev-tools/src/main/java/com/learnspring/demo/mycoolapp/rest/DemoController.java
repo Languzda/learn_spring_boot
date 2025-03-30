@@ -14,7 +14,7 @@ public class DemoController {
 
     // constructor injection
     @Autowired
-    public DemoController(@Qualifier("baseballCoach") Coach coach, @Qualifier("baseballCoach") Coach anotherCoach) {
+    public DemoController(@Qualifier("aquatic") Coach coach, @Qualifier("baseballCoach") Coach anotherCoach) {
         System.out.println("In constructor: " + getClass().getSimpleName());
         myCoach = coach;
         this.anotherCoach = anotherCoach;
