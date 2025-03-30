@@ -1,4 +1,4 @@
-package com.learnspring.demo.mycoolapp.common;
+package com.learnspring.demo.util;
 
 public interface Coach {
     String getDailyWorkout();
