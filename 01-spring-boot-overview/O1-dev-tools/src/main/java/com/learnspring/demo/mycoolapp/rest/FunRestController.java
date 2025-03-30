@@ -10,4 +10,10 @@ public class FunRestController {
     public String sayHello(){
         return "Hello World xD";
     }
+
+    @GetMapping("/workout")
+    public String workout(){
+        return "Hello World workout";
+    }
+
 }
