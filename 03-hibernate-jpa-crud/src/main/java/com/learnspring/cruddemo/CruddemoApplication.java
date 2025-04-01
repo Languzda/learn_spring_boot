@@ -28,7 +28,7 @@ public class CruddemoApplication {
 //			updateStudent(studentDAO);
 //			deleteStudent(studentDAO);
 //			deleteAllStudent(studentDAO);
-			readAllStudents(studentDAO);
+//			readAllStudents(studentDAO);
 		};
 	}
 
