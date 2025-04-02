@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "976ae420-3b6c-4289-967b-b85027b9479f",
+		"name": "spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32714472"
+	},
+	"item": [
+		{
+			"name": "employee - rest",
+			"item": [
+				{
+					"name": "get employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/theapi/members",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"theapi",
+								"members"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get employees Sorted",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/theapi/members",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"theapi",
+								"members"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/theapi/members/5",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"theapi",
+								"members",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"Natall2y\",\r\n    \"lastName\":\"Kubrov\",\r\n    \"email\":\"the.mail@ma.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/theapi/members",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"theapi",
+								"members"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update employee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"NatallyUpdate\",\r\n    \"lastName\":\"Kubrov\",\r\n    \"email\":\"the.mail@ma.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/theapi/members/3",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"theapi",
+								"members",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete employee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/theapi/employees/6",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"theapi",
+								"employees",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "127.0.0.1:8080",
+			"type": "string"
+		}
+	]
+}
