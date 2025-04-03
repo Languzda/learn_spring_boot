@@ -1,11 +1,327 @@
 {
 	"info": {
-		"_postman_id": "976ae420-3b6c-4289-967b-b85027b9479f",
+		"_postman_id": "153bb568-77ab-45d0-a626-f37f99aaeebe",
 		"name": "spring",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "32714472"
+		"_exporter_id": "18650410",
+		"_collection_link": "https://restless-meadow-744011.postman.co/workspace/Shareomat~d21664e8-945d-43f6-97d2-0fa17501eb7e/collection/18650410-153bb568-77ab-45d0-a626-f37f99aaeebe?action=share&source=collection_link&creator=18650410"
 	},
 	"item": [
+		{
+			"name": "crud employees",
+			"item": [
+				{
+					"name": "get employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/employees",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/employees/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"Juan\",\r\n    \"lastName\":\"Perez\",\r\n    \"email\":\"juan.mail@luv.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/employees",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update employee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"JuanUpdated\",\r\n    \"lastName\":\"Perez\",\r\n    \"email\":\"juan.mail@luv.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/employees/6",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "partial update employee",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"JuanUpdatedPatch\",\r\n \r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/employees/6",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete employee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"JuanUpdated\",\r\n    \"lastName\":\"Perez\",\r\n    \"email\":\"juan.mail@luv.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/employees/6",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "crud employees auth",
+			"item": [
+				{
+					"name": "get employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/employees",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/employees/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"Juan\",\r\n    \"lastName\":\"Perez\",\r\n    \"email\":\"juan.mail@luv.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/employees",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update employee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"JuanUpdated\",\r\n    \"lastName\":\"Perez\",\r\n    \"email\":\"juan.mail@luv.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/employees/6",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete employee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"JuanUpdated\",\r\n    \"lastName\":\"Perez\",\r\n    \"email\":\"juan.mail@luv.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/employees/6",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"employees",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "username",
+						"value": "susan",
+						"type": "string"
+					},
+					{
+						"key": "password",
+						"value": "test123",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
 		{
 			"name": "employee - rest",
 			"item": [
@@ -148,6 +464,51 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/students",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/students/1",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"students",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -175,7 +536,7 @@
 	"variable": [
 		{
 			"key": "URL",
-			"value": "127.0.0.1:8080",
+			"value": "127.0.0.1:3000",
 			"type": "string"
 		}
 	]
